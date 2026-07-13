@@ -28,6 +28,7 @@ def make(path, palette):
 make(sys.argv[1], ((34,55,92),(218,151,110),(225,183,158),(70,120,175)))
 make(sys.argv[2], ((45,38,70),(130,92,150),(191,151,128),(115,82,140)))
 '@
-& $python -c $code $output $target
+$encoded = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($code))
+& $python -c "import base64;exec(base64.b64decode('$encoded'))" $output $target
 if ($LASTEXITCODE -ne 0) { throw "Failed to generate neutral test assets." }
 Write-Host "Generated $output and $target"
