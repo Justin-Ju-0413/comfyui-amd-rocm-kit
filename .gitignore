@@ -1,0 +1,43 @@
+# Runtime and local state
+.venv/
+venv*/
+ComfyUI/
+models/
+input/
+output/
+temp/
+user/
+cache/
+downloads/
+*.log
+*.tmp
+*.part
+*.safetensors
+*.gguf
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.mp4
+*.webp
+*.png
+*.jpg
+*.jpeg
+
+# Local configuration and credentials
+.env
+*.local.json
+*.local.ps1
+secrets.*
+
+# Editors and Python
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+
+# Generated reports
+reports/*.json
+reports/*.csv
+reports/*.html
+

@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible deployment or workflow failure
+title: "[Bug]: "
+body:
+  - type: textarea
+    attributes:
+      label: Failure
+      description: Include the exact workflow, error and last successful step. Do not attach private media.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: GPU and VRAM
+      placeholder: AMD Radeon RX 9070 XT, 16GB
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Doctor output
+      description: Remove usernames and local paths before pasting.
+
