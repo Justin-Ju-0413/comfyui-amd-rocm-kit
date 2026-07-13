@@ -10,3 +10,4 @@
 - Removed an unused rgthree LoRA passthrough from the public LTX UI workflow.
 - Added model hashes captured from the verified local installation.
 - Re-ran public Flux edit and LTX 49-frame acceptance workflows and recorded their measured wall times.
+- Published the deployment companion repository on GitHub with validation Actions and collaboration templates.

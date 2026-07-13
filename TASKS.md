@@ -2,7 +2,6 @@
 
 ## Ready
 
-- [ ] Create the public GitHub repository and push `main` after browser authentication is available.
 - [ ] Verify bootstrap from a clean Windows directory on a second machine.
 - [ ] Run the 5-second LTX profile three consecutive times and record peak RAM/VRAM.
 - [ ] Add an 896px Flux 9B edit benchmark with a neutral public test asset.
@@ -16,3 +15,4 @@
 - [x] Establish a public-safe deployment repository layout.
 - [x] Re-run the sanitized Flux reference edit and two-second LTX API workflows from the deployment repository.
 - [x] Validate a clean clone, live-node references, repository scans and the full runtime doctor.
+- [x] Publish the public GitHub repository and configure local `main` to track `origin/main`.

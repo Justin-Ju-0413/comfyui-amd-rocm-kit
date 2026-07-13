@@ -30,4 +30,4 @@ Last verified: 2026-07-14 (Asia/Shanghai)
 - LTX VAE decode at tile 512 OOMs with audio models resident; tile 256 passes.
 - Fast dance motion can blur hands and cause moderate identity drift.
 - SAM2.1 small produced checkerboard artifacts in the tested environment; SAM1 ViT-B remains default.
-- GitHub publication is pending a signed-in browser session; the complete Git history is already mirrored locally at the deployment-repository location.
+- Public repository: `https://github.com/Justin-Ju-0413/comfyui-amd-rocm-kit` on branch `main`.
