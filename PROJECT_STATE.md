@@ -1,6 +1,6 @@
 # Project state
 
-Last verified: 2026-07-13 (Asia/Shanghai)
+Last verified: 2026-07-14 (Asia/Shanghai)
 
 ## Runtime
 
@@ -20,6 +20,8 @@ Last verified: 2026-07-13 (Asia/Shanghai)
 - LTX audio: successful AAC LC, 48kHz stereo mux.
 - SAM1 ViT-B: usable after threshold and morphological close.
 - DWPose: CPU ONNX is correct; DirectML output was black on the tested models.
+- The sanitized public Flux edit and LTX two-second API workflows were re-run successfully from this repository on 2026-07-14.
+- `doctor.ps1` passes against the external verified runtime; the live node registry contains every public workflow node type.
 
 ## Known constraints
 
@@ -28,3 +30,4 @@ Last verified: 2026-07-13 (Asia/Shanghai)
 - LTX VAE decode at tile 512 OOMs with audio models resident; tile 256 passes.
 - Fast dance motion can blur hands and cause moderate identity drift.
 - SAM2.1 small produced checkerboard artifacts in the tested environment; SAM1 ViT-B remains default.
+- GitHub publication is pending a signed-in browser session; the complete Git history is already mirrored locally at the deployment-repository location.
