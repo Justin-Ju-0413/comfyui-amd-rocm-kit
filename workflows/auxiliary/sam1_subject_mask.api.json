@@ -1,0 +1,13 @@
+{
+  "1": {"class_type":"LoadImage","inputs":{"image":"kit_test_portrait.png"}},
+  "2": {"class_type":"SolidMask","inputs":{"value":1.0,"width":512,"height":704}},
+  "3": {"class_type":"MaskToSEGS","inputs":{"mask":["2",0],"combined":true,"crop_factor":1.0,"bbox_fill":true,"drop_size":10,"contour_fill":true}},
+  "4": {"class_type":"SAMLoader","inputs":{"model_name":"sam_vit_b_01ec64.pth","device_mode":"AUTO"}},
+  "5": {"class_type":"SAMDetectorCombined","inputs":{"sam_model":["4",0],"segs":["3",0],"image":["1",0],"detection_hint":"center-1","dilation":0,"threshold":0.93,"bbox_expansion":16,"mask_hint_threshold":0.7,"mask_hint_use_negative":"Outter"}},
+  "6": {"class_type":"ThresholdMask","inputs":{"mask":["5",0],"value":0.5}},
+  "7": {"class_type":"GrowMask","inputs":{"mask":["6",0],"expand":12,"tapered_corners":false}},
+  "8": {"class_type":"GrowMask","inputs":{"mask":["7",0],"expand":-12,"tapered_corners":false}},
+  "9": {"class_type":"MaskToImage","inputs":{"mask":["8",0]}},
+  "10": {"class_type":"SaveImage","inputs":{"images":["9",0],"filename_prefix":"kit/sam1_subject_mask"}}
+}
+

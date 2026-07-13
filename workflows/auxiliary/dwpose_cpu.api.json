@@ -1,0 +1,6 @@
+{
+  "1": {"class_type":"LoadImage","inputs":{"image":"kit_test_portrait.png"}},
+  "2": {"class_type":"DWPreprocessor","inputs":{"image":["1",0],"detect_hand":"enable","detect_body":"enable","detect_face":"enable","resolution":512,"bbox_detector":"yolox_l.onnx","pose_estimator":"dw-ll_ucoco_384.onnx","scale_stick_for_xinsr_cn":"disable"}},
+  "3": {"class_type":"SaveImage","inputs":{"images":["2",0],"filename_prefix":"kit/dwpose_cpu"}}
+}
+
