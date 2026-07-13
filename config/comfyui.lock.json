@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/comfyanonymous/ComfyUI.git",
+  "commit": "f3a36e74844893f32f77f22d249d08862805d8f4",
+  "python": "3.12",
+  "torch": {
+    "version": "2.9.1+rocm7.2.1",
+    "url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torch-2.9.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl",
+    "sha256": "e88bf270163b48f7f27f7ea3db5ffb3be4ba107301933022bcb3c6ddedfeeabb"
+  },
+  "torchvision": {
+    "version": "0.24.1+rocm7.2.1",
+    "url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torchvision-0.24.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl",
+    "sha256": "b5c34d76a2f01fb97e1e0f224bd97fc3a58ec1ee1ef2376af2d72086e9aca34c"
+  },
+  "torchaudio": {
+    "version": "2.9.1+rocm7.2.1",
+    "url": "https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torchaudio-2.9.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl",
+    "sha256": "62835605995c7812a3224733abf08e222afddb7a487c493521e613ca46e578ab"
+  }
+}
+

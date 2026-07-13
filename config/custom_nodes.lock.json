@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {"name":"ComfyUI-ControlNet-Aux","repository":"https://github.com/Fannovel16/comfyui_controlnet_aux.git","version":"1.1.5","license":"Apache-2.0"},
+    {"name":"ComfyUI-GGUF","repository":"https://github.com/city96/ComfyUI-GGUF.git","version":"2.0.0","license":"Apache-2.0"},
+    {"name":"ComfyUI-Impact-Pack","repository":"https://github.com/ltdrdata/ComfyUI-Impact-Pack.git","commit":"429d0159ad429e64d2b3916e6e7be9c22d025c3c","license":"GPL-3.0"},
+    {"name":"ComfyUI-KJNodes","repository":"https://github.com/kijai/ComfyUI-KJNodes.git","version":"1.4.7","license":"GPL-3.0"},
+    {"name":"ComfyUI-LTXVideo","repository":"https://github.com/Lightricks/ComfyUI-LTXVideo.git","commit":"aceeae9635f6d493f2893ba3c411a1c36031788a","license":"LTX-2-Community"},
+    {"name":"ComfyUI-Manager","repository":"https://github.com/ltdrdata/ComfyUI-Manager.git","version":"registry-current","license":"GPL-3.0"},
+    {"name":"ComfyUI-PuLID-Flux","repository":"https://github.com/balazik/ComfyUI-PuLID-Flux.git","commit":"a80912fc3435c358607bf4b43a58dbcbebdb09ff","license":"Apache-2.0"},
+    {"name":"ComfyUI-ReActor","repository":"https://github.com/Gourieff/ComfyUI-ReActor.git","version":"0.7.0-a2","license":"GPL-3.0"},
+    {"name":"ComfyUI-VideoHelperSuite","repository":"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git","version":"1.7.9","license":"GPL-3.0"},
+    {"name":"ComfyUI-WanVideoWrapper","repository":"https://github.com/kijai/ComfyUI-WanVideoWrapper.git","version":"1.4.7","license":"Apache-2.0"},
+    {"name":"comfyui_segment_anything","repository":"https://github.com/storyicon/comfyui_segment_anything.git","version":"snapshot-2026-07-12","license":"Apache-2.0"},
+    {"name":"ComfyUI_UltimateSDUpscale","repository":"https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git","version":"snapshot-2026-07-12","license":"GPL-3.0"}
+  ]
+}
+

@@ -1,0 +1,19 @@
+diff --git a/node_wrappers/dwpose.py b/node_wrappers/dwpose.py
+--- a/node_wrappers/dwpose.py
++++ b/node_wrappers/dwpose.py
+@@
+-GPU_PROVIDERS = ["CUDAExecutionProvider", "DirectMLExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CoreMLExecutionProvider"]
++GPU_PROVIDERS = ["CUDAExecutionProvider", "DmlExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CoreMLExecutionProvider"]
+diff --git a/src/custom_controlnet_aux/dwpose/util.py b/src/custom_controlnet_aux/dwpose/util.py
+--- a/src/custom_controlnet_aux/dwpose/util.py
++++ b/src/custom_controlnet_aux/dwpose/util.py
+@@
+-    ONNX_PROVIDERS = ["CUDAExecutionProvider", "DirectMLExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CPUExecutionProvider"]
++    ONNX_PROVIDERS = ["CUDAExecutionProvider", "DmlExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CPUExecutionProvider"]
+diff --git a/utils.py b/utils.py
+--- a/utils.py
++++ b/utils.py
+@@
+-    ORT_PROVIDERS = ["CUDAExecutionProvider", "DirectMLExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CPUExecutionProvider", "CoreMLExecutionProvider"]
++    ORT_PROVIDERS = ["CUDAExecutionProvider", "DmlExecutionProvider", "OpenVINOExecutionProvider", "ROCMExecutionProvider", "CPUExecutionProvider", "CoreMLExecutionProvider"]
+

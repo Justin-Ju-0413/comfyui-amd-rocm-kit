@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "flux2-klein-4b-q4ks",
+      "group": "image-preview",
+      "path": "models/unet/flux-2-klein-4b-Q4_K_S.gguf",
+      "size": 2583077440,
+      "sha256": "bce1a0e68882b290a7b50d962936b7aff38fe3f61e598f0dca6ba36a90f3d578",
+      "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-Q4_K_S.gguf",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "flux2-klein-9b-kv-q4km",
+      "group": "image-quality",
+      "path": "models/unet/Flux-2-Klein-9B-KV-Q4_K_M.gguf",
+      "size": 5716891936,
+      "sha256": "022f9d41814e24f5ca70d4b40cc6c1d50ead4097de1845e45b232ff53278e956",
+      "url": "https://huggingface.co/QuantStack/FLUX.2-Klein-9B-KV-GGUF/resolve/main/Flux-2-Klein-9B-KV-Q4_K_M.gguf",
+      "license": "FLUX Non-Commercial"
+    },
+    {
+      "id": "qwen3-4b-flux2-fp4",
+      "group": "image-preview",
+      "path": "models/text_encoders/qwen_3_4b_fp4_flux2.safetensors",
+      "size": 3848213998,
+      "sha256": "3eab03a77adb0ee5304a4e677d5c10ac22f9049c1d7c894adca4f8bb39206ca8",
+      "url": "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-4b/resolve/main/split_files/text_encoders/qwen_3_4b_fp4_flux2.safetensors",
+      "license": "upstream"
+    },
+    {
+      "id": "qwen3-8b-flux2-fp4mixed",
+      "group": "image-quality",
+      "path": "models/text_encoders/qwen_3_8b_fp4mixed.safetensors",
+      "size": 6802593327,
+      "sha256": "bbf16f981d98e16d080c566134814c4e9f6aadd0d0e1383c60bc44ba939d760d",
+      "url": "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/qwen_3_8b_fp4mixed.safetensors",
+      "license": "upstream"
+    },
+    {
+      "id": "flux2-vae",
+      "group": "image-common",
+      "path": "models/vae/flux2-vae.safetensors",
+      "size": 336211292,
+      "sha256": "868fe7b343cc8f3a19dbcfcafbc3d5f888802be3f89bd81b65b3621a066ce8f3",
+      "url": "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-4b/resolve/main/split_files/vae/flux2-vae.safetensors",
+      "license": "upstream"
+    },
+    {
+      "id": "ltx23-distilled-q3ks",
+      "group": "video",
+      "path": "models/unet/LTX-2.3-22B-distilled-1.1-Q3_K_S.gguf",
+      "size": 13959437984,
+      "sha256": "9b7f36c8b37b1089a1fb0bd058f000dc7ce695f39e071f224fa03ca03d0f9759",
+      "url": "https://huggingface.co/QuantStack/LTX-2.3-GGUF/resolve/main/LTX-2.3-22B-distilled-1.1-Q3_K_S.gguf",
+      "license": "LTX-2 Community"
+    },
+    {
+      "id": "gemma3-12b-qat-q4xl",
+      "group": "video",
+      "path": "models/text_encoders/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf",
+      "size": 7432229248,
+      "sha256": "da98f81c86916ed1c76b3eeda56b25cb7b8352b01093e2edb8028110fe2cb53b",
+      "url": "https://huggingface.co/unsloth/gemma-3-12b-it-qat-GGUF/resolve/main/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf",
+      "license": "Gemma"
+    },
+    {
+      "id": "ltx23-text-projection",
+      "group": "video",
+      "path": "models/text_encoders/ltx-2.3_text_projection_bf16.safetensors",
+      "size": 2312149072,
+      "sha256": "911d59bb4cb7708179c9a0045ea0fe41212ecfb77aed3a02702b7c0a8274911f",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/text_encoders/ltx-2.3_text_projection_bf16.safetensors",
+      "license": "LTX-2 Community"
+    },
+    {
+      "id": "ltx23-video-vae",
+      "group": "video",
+      "path": "models/vae/LTX23_video_vae_bf16.safetensors",
+      "size": 1452258578,
+      "sha256": "01ea62d09bc139f95c5dee7b5c062ad6a3e6cd8be910a1983ac02e7eb5b8ee3b",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_video_vae_bf16.safetensors",
+      "license": "LTX-2 Community"
+    },
+    {
+      "id": "ltx23-audio-vae",
+      "group": "video-audio",
+      "path": "models/vae/LTX23_audio_vae_bf16.safetensors",
+      "size": 364855188,
+      "sha256": "5bc10fa4adecf99dda132d916e23048cbd56797702c5fa50eb5d2079048a38c3",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_audio_vae_bf16.safetensors",
+      "license": "LTX-2 Community"
+    },
+    {
+      "id": "ltx23-spatial-upscaler",
+      "group": "video",
+      "path": "models/latent_upscale_models/ltx-2.3-spatial-upscaler-x2-1.1.safetensors",
+      "size": 995743560,
+      "sha256": "5f416311fa8172b65af67530758964708d29a317b830d689a51143b7f91913ed",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/latent_upscale_models/ltx-2.3-spatial-upscaler-x2-1.1.safetensors",
+      "license": "LTX-2 Community"
+    },
+    {
+      "id": "sam1-vit-b",
+      "group": "auxiliary",
+      "path": "models/sams/sam_vit_b_01ec64.pth",
+      "size": 375042383,
+      "sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+      "url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "inswapper-128",
+      "group": "face",
+      "path": "models/insightface/inswapper_128.onnx",
+      "size": 554253681,
+      "sha256": "e4a3f08c753cb72d04e10aa0f7dbe3deebbf39567d4ead6dce08e98aa49e16af",
+      "url": null,
+      "license": "manual-review-required"
+    }
+  ]
+}

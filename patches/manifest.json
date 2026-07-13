@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "patches": [
+    {
+      "id": "controlnet-aux-dml-provider-name",
+      "target": "custom_nodes/ComfyUI-ControlNet-Aux",
+      "file": "controlnet-aux-dml-provider.patch",
+      "expected_version": "1.1.5",
+      "default": true
+    },
+    {
+      "id": "reactor-local-profile",
+      "target": "custom_nodes/ComfyUI-ReActor",
+      "file": "reactor-local-profile.patch",
+      "expected_version": "0.7.0-a2",
+      "default": false
+    }
+  ]
+}
+
