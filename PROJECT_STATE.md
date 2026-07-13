@@ -29,5 +29,6 @@ Last verified: 2026-07-14 (Asia/Shanghai)
 - LTX `--lowvram` stalls due to per-layer CPU/GPU transfer; NORMAL_VRAM is the validated path.
 - LTX VAE decode at tile 512 OOMs with audio models resident; tile 256 passes.
 - Fast dance motion can blur hands and cause moderate identity drift.
+- Identity-first portrait prompts can over-constrain LTX motion: three seed-only retries preserved the subject but produced posing rather than recognizable dance.
 - SAM2.1 small produced checkerboard artifacts in the tested environment; SAM1 ViT-B remains default.
 - Public repository: `https://github.com/Justin-Ju-0413/comfyui-amd-rocm-kit` on branch `main`.

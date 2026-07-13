@@ -22,3 +22,7 @@ The sanitized repository workflows were submitted directly to the live ComfyUI A
 | `ltx23_i2v_2s_silent.api.json` | H.264 High, yuv420p BT.709, 512x704, 49 frames, 24fps, 2.04s | 840.6s cold/path switch |
 
 OpenCV decoded all 49 frames. FFmpeg 7.1 decoded the entire stream without errors. The longer LTX time includes switching from a loaded Flux path and loading/offloading the 22B Q3 model on a 16GB GPU; optimize only after repeatable warm-run measurements are collected.
+
+## Portrait motion stability experiment (2026-07-14)
+
+Three private portrait I2V runs used identical identity-first prompts and seeds `20260714` through `20260716`. All produced valid 512x704, 49-frame, 24fps, 2.04-second H.264/yuv420p files in 390s, 300s and 270s. Identity, face visibility and framing were stable, but all three failed the recognizable-dance criterion because the restrictive hand and framing constraints reduced motion to blinking, head turns and shoulder posing. No audio output was produced. The next iteration must test a bounded shoulder/torso motion control rather than continue seed-only retries.
