@@ -14,6 +14,9 @@ jobs:
           python-version: "3.12"
       - name: Validate manifests and workflows
         run: python tests/validate_repo.py
+      - name: Run no-GPU doctor
+        shell: pwsh
+        run: ./scripts/doctor.ps1 -StaticOnly
       - name: Parse PowerShell scripts
         shell: pwsh
         run: |
@@ -30,4 +33,3 @@ jobs:
         run: |
           $large = Get-ChildItem -Recurse -File | Where-Object { $_.Length -gt 10MB -and $_.FullName -notmatch '\\.git\\' }
           if ($large) { $large | Format-Table FullName,Length; exit 1 }
-
