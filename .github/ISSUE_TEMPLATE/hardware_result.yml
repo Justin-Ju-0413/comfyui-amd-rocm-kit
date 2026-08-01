@@ -1,0 +1,45 @@
+name: Hardware compatibility result
+description: Share a reproducible pass or failure without uploading private media or credentials.
+title: "[hardware] "
+labels: [hardware-result]
+body:
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options: [Pass, Partial, Fail]
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Kit commit or release
+      placeholder: v0.1.1 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and VRAM
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows, Python, PyTorch and driver versions
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Workflow tested
+      options: [Bootstrap only, Doctor only, Flux 4B, Flux 9B, Flux edit, LTX video, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized doctor output and reproduction steps
+      description: Remove usernames, absolute paths, tokens, cookies, private media and model URLs containing credentials.
+    validations:
+      required: true

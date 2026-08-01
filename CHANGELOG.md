@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a compatibility matrix and structured hardware-result issue template.
+- Added the no-GPU `doctor.ps1 -StaticOnly` check to CI.
+- Clarified the v0.1 maintenance, validation, and licensing boundaries.
+
 ## 0.1.0 - 2026-07-13
 
 - Added reproducible Windows ROCm deployment scaffolding for RX 9070 XT.

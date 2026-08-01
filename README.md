@@ -1,5 +1,7 @@
 # ComfyUI AMD ROCm Kit
 
+[![Validation](https://github.com/Justin-Ju-0413/comfyui-amd-rocm-kit/actions/workflows/validate.yml/badge.svg)](https://github.com/Justin-Ju-0413/comfyui-amd-rocm-kit/actions/workflows/validate.yml) [![Release](https://img.shields.io/github/v/release/Justin-Ju-0413/comfyui-amd-rocm-kit?display_name=tag)](https://github.com/Justin-Ju-0413/comfyui-amd-rocm-kit/releases)
+
 面向 Windows、AMD Radeon RX 9070 XT 16GB 和 32GB 内存的可复现 ComfyUI 部署层。它不复制 ComfyUI 或模型文件，而是锁定经过实测的核心版本、自定义节点、模型清单、工作流和验收脚本。
 
 ## 已验证能力
@@ -22,6 +24,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\doctor.ps1
 
 默认运行目录为仓库下的 `runtime/ComfyUI`。也可以先设置 `COMFYUI_ROOT` 指向现有安装。浏览器打开 <http://127.0.0.1:8188>。详细步骤见 [新手操作指南](docs/新手操作指南.md)。
 
+没有 AMD GPU 时可运行 `powershell -File scripts/doctor.ps1 -StaticOnly`，验证清单、JSON、脚本与仓库边界。硬件支持范围见 [兼容性矩阵](docs/COMPATIBILITY.md)；静态检查通过不代表 GPU 工作流已运行。
+
 ## 仓库不包含什么
 
 模型、虚拟环境、用户输入、生成输出、缓存、令牌和本机专用配置不会进入 Git。模型由 `config/models.manifest.json` 描述，通过 `scripts/download-models.ps1` 按组下载并校验。
@@ -41,3 +45,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\doctor.ps1
 ## 许可证
 
 本仓库脚本和文档使用 MIT 许可证。ComfyUI、自定义节点和模型保持各自上游许可证；锁定清单会注明其来源，使用者需自行遵守。
+
+## 维护范围
+
+`v0.1.x` 只维护可复现安装、诊断、兼容性记录和现有工作流正确性，不扩张为 ComfyUI fork。变更记录见 [`CHANGELOG.md`](CHANGELOG.md)。
